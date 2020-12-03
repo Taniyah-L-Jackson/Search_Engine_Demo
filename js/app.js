@@ -48,10 +48,6 @@ async function displayUsers() {
     // get info from server
     let userName = document.getElementById('user').value;
 
-    const headers = {
-        "Authorization" : `Token 71555a5df4124148196bc1bef6cb52e06c996eef` 
-    };
-
     const response = await fetch(`https://api.github.com/search/users?q=${userName}`, 
         {
             "method" : "GET",
